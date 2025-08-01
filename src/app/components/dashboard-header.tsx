@@ -1,4 +1,6 @@
-"use client"
+'use client'
+
+import { AddMovieDialog } from "./add-movie-dialog"
 
 type DashboardHeaderProps = {
   movieCount: number
@@ -19,7 +21,7 @@ export function DashboardHeader({
         </p>
       </div>
 
-      {/* <AddMovieDialog isOpen={isAddDialogOpen} onOpenChange={onAddDialogOpenChange} onAddMovie={onAddMovie} /> */}
+      <AddMovieDialog isOpen={false} />
     </div>
   )
 }
